@@ -62,6 +62,6 @@ object MySpinalConfig extends SpinalConfig(defaultConfigForClockDomains = ClockD
 //Generate the MyTopLevel's Verilog using the above custom configuration.
 object MyTopLevelVerilogWithCustomConfig {
   def main(args: Array[String]) {
-    MySpinalConfig.generateVerilog(new MyTopLevel)
+    MySpinalConfig.generateVerilog(new Controller)
   }
 }
